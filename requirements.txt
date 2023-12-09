@@ -1,6 +1,6 @@
 pandas
 streamlit
 scikit-learn
-pip
 plotly
 openpyxl
+pip
