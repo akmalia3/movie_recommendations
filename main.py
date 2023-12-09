@@ -27,7 +27,7 @@ def recommend_movie(movie_title, dataset, knn_model, df):
   recommended_movies = df['title'].iloc[neighbor[0][1:]].tolist()
   return recommended_movies
 
-movie = st.input("Masukkan judul film:")
+movie = st.text_input("Masukkan judul film:")
 recomendation = recommend_movie(movie, dataset, knn_model, df)
 
 f"Rekomendasi film dari {movie}"
